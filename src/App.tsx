@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header/Header";
+import { Item } from "./components/Main/Item";
 
 import initialProducts from "./data/products";
 
@@ -17,17 +18,12 @@ function App() {
 
           <div className="cart--item-list-container">
             <ul className="item-list cart--item-list">
-              <li>
-                <img
-                  className="cart--item-icon"
-                  src="./assets/icons/006-bananas.svg"
-                  alt="bananas"
-                />
-                <p>bananas</p>
-                <button className="quantity-btn.remove-btn.center">-</button>
-                <span className="quantity-text.center">1</span>
-                <button className="quantity-btn.add-btn.center">+</button>
-              </li>
+              <Item product={{
+                id: 0,
+                name: "",
+                price: 0,
+                inCart: 0
+              }} />
             </ul>
           </div>
 

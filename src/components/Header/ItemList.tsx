@@ -1,6 +1,8 @@
 import { ProductItem } from "../../data/products";
 import { Product } from "./Product";
 
+import "./ItemList.css";
+
 type Props = { initialProducts: ProductItem[] };
 
 export function ItemList({ initialProducts }: Props) {

@@ -1,5 +1,7 @@
 import { ProductItem } from "../../data/products";
 
+import "./Product.css";
+
 type Props = { product: ProductItem };
 
 export function Product({ product }: Props) {
